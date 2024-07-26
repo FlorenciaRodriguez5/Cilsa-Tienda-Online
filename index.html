@@ -11,7 +11,7 @@
     <title>TecnoShop</title>
 </head>
 <body data-bs-theme="light" id="body">
-
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -43,7 +43,7 @@
               </div>
               <!---------------------BOTON DE ALTO CONTRASTE-------------------->
              <div class="col-md-1 text-center text-md-right" >
-              <button type="button" class="btn rounded-fill" id="darkMode" onclick="cambiarTema()" ><svg xmlns="http://www.w3.org/2000/svg"  height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+              <button type="button" class="btn rounded-fill" id="darkMode" onclick="cambiarTema()"  aria-label="CONTRASTE--------------------"><svg xmlns="http://www.w3.org/2000/svg"  height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
                 <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
               </svg> </button>
              </div>
@@ -52,17 +52,12 @@
           </nav>
 
     </header>
+<main id="main-content">
 
-   
+  <p>contenido de la pagina </p>
+</main> 
   
    
-
-
-
-
-
-
-
      <!-----------------------FOOTER------------------------------>
 
     <footer class="text-dark pt-2 pb-1" id="footer">
@@ -116,22 +111,22 @@
        <div class="text-center">
         <ul class="list-unstryles list-inlines">
             <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class=" fab fa-facebook"></i></a>
+                <a href="#" class="text-dark" aria-label="facebook "  > <i class=" fab fa-facebook"  ></i></a>
             </li>
             <li class="list-inline-item">
                 <a href="#" class="text-dark"> <i class=" fab fa-twitter"></i></a>
             </li>
             <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class=" fab fa-google-plus"></i></a>
+                <a href="#" class="text-dark" aria-label="google plus"> <i class=" fab fa-google-plus"></i></a>
             </li>
             <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class=" fab fa-linkedin"></i></a>
+                <a href="#" class="text-dark"> <i class=" fab fa-linkedin" aria-label="linkedin" ></i></a>
             </li>
             <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class=" fab fa-instagram"></i></a>
+                <a href="#" class="text-dark"> <i class=" fab fa-instagram" aria-label="instagram"></i></a>
             </li>
             <li class="list-inline-item">
-                <a href="#" class="text-dark"> <i class=" fab fa-twitter"></i></a>
+                <a href="#" class="text-dark"> <i class=" fab fa-twitter" aria-label="X"></i></a>
             </li>
         </ul>
        </div>
