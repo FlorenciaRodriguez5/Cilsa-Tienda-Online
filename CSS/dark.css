@@ -1,3 +1,10 @@
 .container-fluid, #footer{
     background-color: #5e5d5d;
 }
+
+#card{
+    transition: all 0.3s;
+}
+#card:hover{
+    transform: scale(1.15);
+}
