@@ -2,3 +2,9 @@
     background-color: #d0d1d1;
 }
 
+#card{
+    transition: all 0.2s;
+}
+#card:hover{
+    transform: scale(1.15);
+}
