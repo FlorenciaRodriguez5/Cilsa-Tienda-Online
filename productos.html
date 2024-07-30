@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css" id="style">
+    
+  
+    <title>TecnoShop</title>
+</head>
+<body data-bs-theme="light" id="body">
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="" alt="logo" width="50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="productos.html?tab=celulares">Celulares</a></li>
+                      <li><a class="dropdown-item" href="productos.html?tab=computadoras">Computadoras</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+              <!---------------------BOTON DE ALTO CONTRASTE-------------------->
+             <div class="col-md-1 text-center text-md-right" >
+              <button type="button" class="btn rounded-fill" id="darkMode" onclick="cambiarTema()"  aria-label="CONTRASTE--------------------"><svg xmlns="http://www.w3.org/2000/svg"  height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+              </svg> </button>
+             </div>
+              
+            </div>
+          </nav>
+
+    </header>
+    <main id="main-content">
+        <div class="container mt-5">
+          <h2 class="text-center">Productos</h2>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" id="celulares-tab" data-bs-toggle="tab" href="#celulares" role="tab" aria-controls="celulares" aria-selected="true">Celulares</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="computadoras-tab" data-bs-toggle="tab" href="#computadoras" role="tab" aria-controls="computadoras" aria-selected="false">Computadoras</a>
+              </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+              <!-- Celulares -->
+              <div class="tab-pane fade show active" id="celulares" role="tabpanel" aria-labelledby="celulares-tab">
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos/Xiaomi.jpg" class="card-img-top" alt="Xiaomi Redmi Note 13 Pro">
+                              <div class="card-body">
+                                  <h3 class="card-title">Xiaomi Redmi Note 13 Pro+ 5G Dual SIM 512 GB negro 12 GB RAM</h3>
+                                  <p class="card-text">Fotografía profesional en tu bolsillo
+                                    Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.
+                                    
+                                    Además, el dispositivo cuenta con cámara frontal de 16 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p>
+                                  <p class="card-text"><strong>Precio: $1059999 </strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos//samsung.webp" class="card-img-top" alt="Samsung Galaxy S24 Ultra ">
+                              <div class="card-body">
+                                  <h3 class="card-title">Samsung Galaxy S24 Ultra 5G Dual SIM 512 GB Gris Titanio 12 GB RAM</h3>
+                                  <p class="card-text">Fotografía profesional en tu bolsillo
+                                    Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.
+                                    
+                                    Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.  </p>
+                                  <p class="card-text"><strong>Precio: $2799999</strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos/apple.webp" class="card-img-top" alt="Apple iPhone 13 Apple iPhone 13 ">
+                              <div class="card-body">
+                                  <h3 class="card-title">Apple iPhone 13 (256 GB) - Azul medianoche </h3>
+                                  <p class="card-text">iPhone 13. El sistema de dos cámaras más avanzado en un iPhone. El superrápido chip A15 Bionic. Un gran
+                                    salto en duración de batería. Un diseño resistente. Y una pantalla Super Retina XDR más brillante.</p>
+                                  <p class="card-text"><strong>Precio: $2630099 </strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Computadoras -->
+              <div class="tab-pane fade" id="computadoras" role="tabpanel" aria-labelledby="computadoras-tab">
+                  <div class="row mt-4">
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos/lenovo.webp" class="card-img-top" alt="Notebook Lenovo E470 ">
+                              <div class="card-body">
+                                  <h3 class="card-title">Notebook Lenovo E470 I7 Gtx 940 Ram 8gb 480 Ssd  </h3>
+                                  <p class="card-text">Ideal para Estudio, Juegos, trabajos de oficina, y el hogar, Facil de transportar.</p>
+                                  <p class="card-text"><strong>Precio: $750000 </strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos//hp.webp" class="card-img-top" alt="Notebook Hp Probook 440 ">
+                              <div class="card-body">
+                                  <h3 class="card-title">Notebook Hp Probook 440 G9 Intel I7 14 32gb Ram 512gb Ssd</h3>
+                                  <p class="card-text">La laptop HP ProBook 440 ofrece a las empresas en crecimiento rendimiento profesional, HP Wolf Security for Business5 y durabilidad en un diseño compacto. Este equipo cuenta con un procesador Intel®2 y está protegido con seguridad siempre activa en la que puede confiar.La laptop HP ProBook 440 ofrece a las empresas en crecimiento un equipo duradero equipado con HP Wolf Security for Business5 que ofrece rendimiento profesional en un diseño compacto. </p>
+                                  <p class="card-text"><strong>Precio: $1419820 </strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <img src="./Recursos/Asus.webp" class="card-img-top" alt="Asus Notebook Vivobook Go 14 ">
+                              <div class="card-body">
+                                  <h3 class="card-title">Notebook Asus Vivobook Go 14 Windows 11 128gb Ssd 4gb Ram Color Dreamy white</h3>
+                                  <p class="card-text">El Asus Notebook Vivobook Go 14 Intel Celeron es la opción perfecta para aquellos que buscan un rendimiento confiable y una experiencia de uso fluida. Con su diseño elegante en color Dreamy White, este portátil combina estilo y funcionalidad en un solo dispositivo.</p>
+                                  <p class="card-text"><strong>Precio: $927299 </strong></p>
+                                  <a href="#" class="btn btn-primary">Comprar</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+        
+      </main>   
+     
+     <!-----------------------FOOTER------------------------------>
+
+    <footer class="text-dark pt-2 pb-1" id="footer">
+       <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+           
+
+        <div class=" col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weigth-bold text-primary" id="about"> About Us</h5>
+            <hr class="mb-4">
+            <p>
+                <a href="#" class="text-dark"> Servicio Técnico </a>
+            </p>
+            <p>
+                <a href="#" class="text-dark"> informacion legal </a>
+            </p>
+            <p>
+                <a href="#" class="text-dark"> Condiciones </a>
+            </p>
+            <p>
+                <a href="#" class="text-dark"> Sucursales </a>
+            </p>
+        </div> 
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weigth-bold text-primary"> contacto</h5>
+            <hr class="mb-4">
+            <p>
+              <li class="fas fa-home me-2"></li>CABA, bulnes 123 
+           </p>
+           
+           <p>
+             <li class="fas fa-envelope me-2" ></li> tecno@gmail.com
+           </p>
+
+           <p>
+             <li class="fas fa-phone me-2" ></li> +1234557890
+          </p>
+       </div>
+
+       <hr class="mb-4"> 
+       <div class="text-center mb-2">
+        <p> 
+            &copy;Copyright Todos los derechos reservados 
+            <a href="#">
+                <strong class="text-primary"> TECNOSHOP.SA</strong>
+            </a>
+        </p>
+       </div>
+
+       <div class="text-center">
+        <ul class="list-unstryles list-inlines">
+            <li class="list-inline-item">
+                <a href="#" class="text-dark" aria-label="facebook "  > <i class=" fab fa-facebook"  ></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class=" fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-dark" aria-label="google plus"> <i class=" fab fa-google-plus"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class=" fab fa-linkedin" aria-label="linkedin" ></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class=" fab fa-instagram" aria-label="instagram"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="text-dark"> <i class=" fab fa-twitter" aria-label="X"></i></a>
+            </li>
+        </ul>
+       </div>
+        
+    
+        </div>
+       </div>
+    </footer>
+    <script src="./JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el parámetro de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const activeTab = urlParams.get('tab');
+    
+            // Mostrar la pestaña correcta
+            if (activeTab === 'celulares') {
+                document.getElementById('celulares-tab').click();
+            } else if (activeTab === 'computadoras') {
+                document.getElementById('computadoras-tab').click();
+            }
+        });
+    </script>
+</body>
+</html>
